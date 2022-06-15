@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('mvn clean') {
-            steps {
-                bat "mvn clean -f JenkinsPractice"
-            }
-        }
+//         stage('mvn clean') {
+//             steps {
+//                 bat "mvn clean -f JenkinsPractice"
+//             }
+//         }
         stage('install') {
             steps {
                 bat "mvn install -f JenkinsPractice"
