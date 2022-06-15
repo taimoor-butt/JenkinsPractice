@@ -3,22 +3,22 @@ pipeline {
     stages {
         stage('mvn clean') {
             steps {
-                bat "mvn clean JenkinsPractice"
+                bat "mvn clean"
             }
         }
         stage('install') {
             steps {
-                bat "mvn install JenkinsPractice"
+                bat "mvn install"
             }
         }
         stage('test') {
             steps {
-                bat "mvn test JenkinsPractice"
+                bat "mvn test"
             }
         }
         stage('package') {
             steps {
-                bat "mvn package JenkinsPractice"
+                bat "mvn package"
             }
         }
     }
